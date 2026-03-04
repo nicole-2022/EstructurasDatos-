@@ -18,7 +18,7 @@ public class Iventario {
         this.producto = producto;
     }
      
-    public Producto buscarPorId(int id){
+    public String buscarPorId(int id){
         String cadena = "";
         for (int i = 0; i < producto.length; i++){
             if (id == producto[i].getId()){
@@ -28,6 +28,12 @@ public class Iventario {
             }
         }
         return cadena;
+    }
+
+    public void agregarProducto(String nombre){
+
+        for( )
+
     }
 
     @Override
