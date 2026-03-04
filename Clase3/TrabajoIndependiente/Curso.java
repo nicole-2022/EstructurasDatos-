@@ -1,5 +1,3 @@
-package Clase3.TrabajoIndependiente;
-
 public class Curso {
     private String Nombre;
     private int id;

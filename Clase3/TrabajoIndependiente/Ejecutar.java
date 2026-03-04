@@ -1,4 +1,3 @@
-package Clase3.TrabajoIndependiente;
 
 public class Ejecutar {
     public static void main(String[] args) {
