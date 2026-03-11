@@ -1,7 +1,5 @@
 package Clase3;
 
-import javax.swing.JOptionPane;
-
 public class EjecutarMoto {
 
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class EjecutarMoto {
         //Operaciones con los  objetos del arreglo
 
         //Obetener el promedio de los modelos del arreglo
-        double promedio = 0.0;
+        
         int suma = 0;
         for (int i = 0; i < m.length; i++){
             suma += m[i].getModelo();

@@ -7,7 +7,7 @@ public class EjecutarInvetario {
         Producto p = new Producto(2003, "Sombrilla", 0.4500, 6);
          Producto p2 = new Producto(2003, "Sombrilla", 0.4500, 6);
           Producto p3 = new Producto(2003, "Sombrilla", 0.4500, 6);
-        
+    
     }
 
     

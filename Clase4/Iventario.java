@@ -32,7 +32,7 @@ public class Iventario {
 
     public void agregarProducto(String nombre){
 
-        for( )
+        
 
     }
 
