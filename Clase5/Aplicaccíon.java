@@ -17,6 +17,7 @@ public class Aplicaccíon {
         while (true) {
             System.out.println("Ingrese nombre del buque:");
             String nombre = usuario.nextLine();
+            usuario.nextLine();
             System.out.println("Puedes ingresar el id del buque (Numero)");
             int id = usuario.nextInt();
             System.out.println("Puedes ingresar el lugar de donde viene  el buque");
