@@ -39,22 +39,22 @@ public class Ejecutar {
 
             if (c != null) {
 
-                // Matriz
+                
                 if (!Contenedor.insertarEnPatio(patio, c)) {
                     System.out.println("Puerto lleno");
                 }
 
-                // Cola
+            
                 if (c.getPrioridad() > 5) {
                     inspeccion.add(c);
                 }
 
-                // Pila
+                
                 Contenedor.apilarSeguro(buque, c);
             }
         }
 
-        // Resultados
+        
         Contenedor.pesoTotal(patio);
 
         Contenedor.procesarInspeccion(inspeccion);
