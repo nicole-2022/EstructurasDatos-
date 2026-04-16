@@ -14,7 +14,7 @@ public class Ejecutar {
 
         double pesoTotal = 0;
 
-        // 📦 LLENAR ARREGLO
+        
         for (int i = 0; i < manifiesto.length; i++) {
 
             System.out.println("Ingrese id:");
@@ -34,7 +34,7 @@ public class Ejecutar {
 
         System.out.println("Peso total del manifiesto: " + pesoTotal);
 
-        // 🔗 PROCESAR
+    
         for (Contenedor c : manifiesto) {
 
             if (c != null) {
