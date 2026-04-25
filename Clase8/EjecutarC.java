@@ -7,10 +7,10 @@ public class Ejecutar {
 
         Scanner usuario = new Scanner(System.in);
 
-        Contenedor[] manifiesto = new Contenedor[3];
-        Contenedor[][] patio = new Contenedor[5][5];
-        Queue<Contenedor> inspeccion = new LinkedList<>();
-        Stack<Contenedor> buque = new Stack<>();
+        Contenedor2[] manifiesto = new Contenedor2[3];
+        Contenedor2[][] patio = new Contenedor2[5][5];
+        Queue<Contenedor2> inspeccion = new LinkedList<>();
+        Stack<Contenedor2> buque = new Stack<>();
 
         double pesoTotal = 0;
 
@@ -26,7 +26,7 @@ public class Ejecutar {
             System.out.println("Dime prioridad:");
             int prioridad = usuario.nextInt();
 
-            Contenedor c = new Contenedor(id, peso, prioridad);
+            Contenedor2 c = new Contenedor2(id, peso, prioridad);
             manifiesto[i] = c;
 
             pesoTotal += peso;
@@ -35,12 +35,12 @@ public class Ejecutar {
         System.out.println("Peso total del manifiesto: " + pesoTotal);
 
         
-        for (Contenedor c : manifiesto) {
+        for (Contenedor2 c : manifiesto) {
 
             if (c != null) {
 
                 
-                if (!Contenedor.insertarEnPatio(patio, c)) {
+                if (!Contenedor2.insertarEnPatio(patio, c)) {
                     System.out.println("Puerto lleno");
                 }
 
@@ -50,21 +50,21 @@ public class Ejecutar {
                 }
 
                 
-                Contenedor.apilarSeguro(buque, c);
+                Contenedor2.apilarSeguro(buque, c);
             }
         }
 
         
-        Contenedor.pesoTotal(patio);
+        Contenedor2.pesoTotal(patio);
 
-        Contenedor.procesarInspeccion(inspeccion);
+        Contenedor2.procesarInspeccion(inspeccion);
 
         System.out.println("\n--- BUQUE ---");
-        for (Contenedor c : buque) {
+        for (Contenedor2 c : buque) {
             System.out.println(c.getId() + " - Peso: " + c.getPeso());
         }
 
-        Contenedor.eliminarFondo(buque);
+        Contenedor2.eliminarFondo(buque);
 
         usuario.close();
         
