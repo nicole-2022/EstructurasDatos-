@@ -1,3 +1,5 @@
+package Clase8;
+
 import java.util.*;
 
 public class Ejecutar {
@@ -15,13 +17,13 @@ public class Ejecutar {
         
         for (int i = 0; i < manifiesto.length; i++) {
 
-            System.out.println("Ingrese id:");
+            System.out.println("Dime  id:");
             String id = usuario.next();
 
-            System.out.println("Ingrese peso:");
+            System.out.println("Dime peso:");
             double peso = usuario.nextDouble();
 
-            System.out.println("Ingrese prioridad:");
+            System.out.println("Dime prioridad:");
             int prioridad = usuario.nextInt();
 
             Contenedor c = new Contenedor(id, peso, prioridad);
@@ -32,7 +34,7 @@ public class Ejecutar {
 
         System.out.println("Peso total del manifiesto: " + pesoTotal);
 
-    
+        
         for (Contenedor c : manifiesto) {
 
             if (c != null) {
@@ -42,7 +44,7 @@ public class Ejecutar {
                     System.out.println("Puerto lleno");
                 }
 
-            
+                
                 if (c.getPrioridad() > 5) {
                     inspeccion.add(c);
                 }
@@ -57,13 +59,14 @@ public class Ejecutar {
 
         Contenedor.procesarInspeccion(inspeccion);
 
-        System.out.println("\n barco, buque");
+        System.out.println("\n--- BUQUE ---");
         for (Contenedor c : buque) {
-            System.out.println(c.getId() + "Peso: " + c.getPeso());
+            System.out.println(c.getId() + " - Peso: " + c.getPeso());
         }
 
         Contenedor.eliminarFondo(buque);
 
         usuario.close();
+        
     }
 }
