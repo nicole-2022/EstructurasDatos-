@@ -108,7 +108,7 @@ public void registrarContenedores(Contenedor[][]mtzContenedor, int c,int i,  Str
                 }
                 else{
                     otros++;
-                }
+                } 
 
             }
 
