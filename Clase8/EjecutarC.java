@@ -2,7 +2,7 @@ package Clase8;
 
 import java.util.*;
 
-public class Ejecutar {
+public class EjecutarC {
     public static void main(String[] args) {
 
         Scanner usuario = new Scanner(System.in);

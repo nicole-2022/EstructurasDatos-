@@ -1,32 +1,38 @@
 package clase9;
 
-import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 
 public class LinkedListMap {
     public static void main(String[] args) {
-        LinkedList<String> historialNavegación = LinkedList<>();
-        // agrega las urls
-        historialNavegación.add("google.com")
-        historialNavegación.add("github.com")
-        historialNavegación.add("stackoverflow.com")
+        
+        LinkedList<String> historialNavegacion = new LinkedList<>();
 
-        System.out.println(historialNavegación);
-        System.out.println(historialNavegación.getLast());
-        historialNavegación.removeLast();
+        //Agregar las urls
+        historialNavegacion.add("google.com");
+        historialNavegacion.add("github.com");
+        historialNavegacion.add("stackoverflow.com");
 
+        System.out.println(historialNavegacion);
 
-        System.out.println(historialNavegación);
-        //-------------------------------------
-        Map<Integer, String> productos = new LinkedList<>();
-        productos.put("Laptop");
-        productos.put("Mause");
-        productos.put("Teclado");
+        System.out.println(historialNavegacion.getLast());
+
+        historialNavegacion.removeLast();
+
+        System.out.println(historialNavegacion);
+
+        //---------------------------------------
+
+        Map<Integer, String> productos = new LinkedHashMap<>();
+        productos.put(101, "Laptop");
+        productos.put(102, "Mouse");
+        productos.put(103, "Teclado");
 
         System.out.println(productos);
+
         System.out.println(productos.containsKey(102)); //true
+        
         productos.put(101, "Pantalla");
 
         System.out.println(productos);
@@ -35,24 +41,9 @@ public class LinkedListMap {
             System.out.println("Código: [" + key + "] -> Producto: [" + value + "]");
         });
         
-        // -----------------Reto final------------
-
-        List<String> ana = new ArrayList<>(List.of("ca,isa", "Pantalon"));
-        LinkedList<String> luis = new ArrayList<>(List.of("Zapatos"));
-
-        ana.size();
+        //---------------Reto Final----------------
 
         
-
-
-    
-    
-
-        
-
-
-
 
     }
-    
 }
