@@ -6,7 +6,7 @@ public class DeshacerPila {
 
     public static void main(String[] args) {
         
-        Stack<String> acciones = new Stack<>()
+        Stack<Character> verParentesis = new Stack<>()
     }
     
 }
